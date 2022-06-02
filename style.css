@@ -19,13 +19,13 @@ section div h2 ,section div p ,section button ,.supercharge {
 nav{
     background-color: rgb(255, 255, 255);
     width: 100%;
+    height: 13vh;
     position:fixed ;
     justify-content:space-between;
     padding:20px
 }
 nav img{
-    margin-left: 60px;
-    margin-top: 15px;
+    margin-left: 60px; 
 }
 nav ol{
     list-style: none;
@@ -39,10 +39,10 @@ nav ol li{
   align-items: center;
   padding: 15px;
 }
-nav ol :not(:nth-child(5n)):hover , button:hover , a:hover{
+nav ol :not(:nth-child(5n)):hover , button:hover {
     background-color: rgb(20, 222, 233);
     color: rgb(0, 0, 22);
-    transition: all ease .5s;
+    transition: all ease-in .3s;
     cursor: pointer ;
 }
 input[type="search"]{
@@ -115,4 +115,9 @@ section div label li {
     padding: 10px;
     margin-bottom: 20px;
     border-radius:50% ; 
+}
+.social a:hover{
+    color: rgb(76, 225, 242);
+    background-color:rgb(8, 54, 75) ;
+    transition: all ease-in .3s;
 }
