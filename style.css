@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+body{
+    background-image: url("./image/background2.jpg");
+    background-size: cover;
+    height: 120vh;
+}
+nav ,nav ol , section , section div label,.social {
+    display: flex;
+}
+section div h2 ,section div p ,section button ,.supercharge {
+    color: white;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position:fixed ;
+    justify-content:space-between;
+    padding:20px
+}
+nav img{
+    margin-left: 60px;
+    margin-top: 15px;
+}
+nav ol{
+    list-style: none;
+    justify-content:space-between;
+    width:75%;
+    align-items: center;
+    padding: 0px 40px;
+}
+nav ol li{
+  font-size: 20px;
+  align-items: center;
+  padding: 15px;
+}
+nav ol :not(:nth-child(5n)):hover , button:hover , a:hover{
+    background-color: rgb(20, 222, 233);
+    color: rgb(0, 0, 22);
+    transition: all ease .5s;
+    cursor: pointer ;
+}
+input[type="search"]{
+    font-size: 20px;
+    padding:10px ;
+    border-radius: 40px;
+    border-color: #000;
+}
+input[type="search"]::placeholder {  
+    text-align: right;
+    font-size: 20px;
+    color: #000;
+}
+section{
+    justify-content: flex-start;
+    padding-left: 9rem;
+    padding-top: 13rem;
+}
+section div h1 {
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: rgb(27, 211, 180);
+}
+section div h2 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 3rem; ;
+}
+section div p {
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+section button{
+    font-size: 15px;
+    border-color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+section div label {
+    /* outline: 2px solid red; */
+    justify-content:center;
+    align-items: center;
+    width:40% ;
+    margin-left: 40px;
+    margin-top: 17px;
+    align-items: center;
+    list-style: none;
+}
+section div label li {
+   margin: 10px;
+   background-color: white;
+   border-radius:100% ;
+   padding: 15px 18px ;
+}
+.supercharge {
+    font-style: italic ;
+    margin-left: 11rem;
+    font-size: 30px;
+}
+.social{
+    justify-content: space-between ;
+    flex-direction:column ;
+    padding-left: 33rem;
+    padding-top: 30rem;
+}
+.social a {
+    background-color: rgb(76, 225, 242);
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius:50% ; 
+}
